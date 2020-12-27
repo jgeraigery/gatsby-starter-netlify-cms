@@ -26,7 +26,19 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  - name: "phenotype"
+    label: "Phenotype"
+    folder: "src/pages/phenotype"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "phenotype"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "desc", widget: "text"}
+      - {label: "Abbreviation", name: "abbr", widget: "text"}
+      - {label: "Phecode", name: "phecode", widget: text}
+      - {label: "Category", name: "category", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
   - name: "pages"
     label: "Pages"
     files:
